@@ -22,7 +22,7 @@ const (
 func main() {
 	client := http.Client{} //创建客户端
 
-	//Normal(client) //普通爬虫耗时 32m44.189886s
+	Normal(client)      //普通爬虫耗时 32m44.189886s
 	Concurrency(client) //并发爬虫耗时 2m32.7746359s
 }
 
