@@ -55,7 +55,6 @@ func Normal(client http.Client) {
 		URL := baseURL + strconv.Itoa(i) + endURL
 		Spider(client, URL, nil)
 
-		time.Sleep(time.Microsecond * 500)
 	}
 	t := time.Since(start)
 	fmt.Println("普通爬虫耗时", t)
